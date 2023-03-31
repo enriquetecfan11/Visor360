@@ -1,17 +1,18 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.123/build/three.module.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.123/examples/jsm/controls/OrbitControls.js';
 
-let camera, scene, renderer;
+// TEXTURE => 	const texture = new THREE.TextureLoader().load( './img/imagen.jpg', render );
 
+let camera, scene, renderer;
 
 init();
 
 function init() {
 	const container = document.getElementById( 'container' );
-	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1100 );
+	camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1100 );
 	camera.position.z = 0.01;
 	scene = new THREE.Scene();
-	const texture = new THREE.TextureLoader().load( 'http://localhost:3000/images/imagen.jpg', render );
+	const texture = new THREE.TextureLoader().load( './img/imagen.jpg', render );
 	texture.mapping = THREE.EquirectangularReflectionMapping;
 	scene.background = texture;
 	renderer = new THREE.WebGLRenderer();
@@ -28,12 +29,10 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
-
 }
 
 
 function render() {
-
 	renderer.render( scene, camera );
-
 }
+
