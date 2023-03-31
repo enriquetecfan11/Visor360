@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "marzipano": "^0.10.2",
-    "three": "^0.150.1"
+    "panolens": "^0.12.1",
+    "three": "^0.150.1",
+    "three-orbitcontrols": "^2.110.3"
   }
 }
