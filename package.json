@@ -1,7 +1,10 @@
 {
   "name": "360-viewer",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "360 viewer",
+  "author": "Enrique Rodriguez Vela",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
