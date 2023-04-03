@@ -23,7 +23,7 @@ body {
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.274);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.274);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.274);
 }
 
