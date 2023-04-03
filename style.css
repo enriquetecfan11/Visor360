@@ -9,15 +9,16 @@ body {
 .title {
   text-align: center;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 800;
 }
 
 .formulario{
   width: 100%;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   text-size-adjust: 30px;
+  max-width: fit-content;
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px;
@@ -30,7 +31,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  max-width: max-content;
 }
 
 
@@ -41,7 +41,7 @@ body {
   background-color: #f0f0f0b0;
   padding: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   border: 2px solid rgb(252, 252, 252);
   box-shadow: 0 0 60px rgba(255, 255, 255, 0.274);
 }
