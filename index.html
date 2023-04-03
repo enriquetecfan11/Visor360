@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Visor 360</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1 id="title">Visor 360</h1>
-  <form>
-    <input type="file" id="file" accept="image/*" onchange="subirImagen()" /> <!-- Se agrega el evento onchange que llama a la función subirImagen() -->
-    <button type="button" aria-placeholder="verimagen" onclick="verImagen()"> <!-- Se agrega el atributo type="button" para evitar que el formulario se envíe al hacer clic en el botón -->
-      Ver Imagen
-    </button>
-  </form>
+  <div class="formulario">
+    <h1 class="title">Visor 360</h1>
+    <p>Seleciona una foto de la galeria con el boton que hay abajo para verla en 360 Grados</p>
+    <input type="file" id="file" accept="image/*" onchange="subirImagen()" />
+  </div>
   <div id="container">
   </div>
   <script type="module" src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
 </body>
+
 </html>
