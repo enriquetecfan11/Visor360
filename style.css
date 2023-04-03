@@ -9,17 +9,15 @@ body {
 .title {
   text-align: center;
   margin-top: 10px;
-  font-size: 45px;
+  font-size: 17px;
   font-weight: 800;
-  font-feature-settings: "aalt";
 }
 
 .formulario{
   width: 100%;
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
   text-size-adjust: 30px;
-  max-width: fit-content;
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px;
@@ -32,6 +30,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  max-width: max-content;
 }
 
 
